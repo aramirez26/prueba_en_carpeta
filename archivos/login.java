@@ -60,6 +60,7 @@ public class login extends HttpServlet implements Serializable {
         } else {
             sesion = request.getSession();
             String usu, pass, usu2, pass2;
+	String variable;
 
             usu = request.getParameter("user");
             pass = request.getParameter("password");
