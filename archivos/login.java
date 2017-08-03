@@ -54,7 +54,7 @@ public class login extends HttpServlet implements Serializable {
             response.sendRedirect("index.jsp");
         } else {
             sesion = request.getSession();
-            String usu, pass, usu2, pass2;
+ 
 
             usu = request.getParameter("user");
             pass = request.getParameter("password");
