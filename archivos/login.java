@@ -3,6 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
+
+/*
+ * hola
+ */
 package Controler;
 
 
@@ -54,8 +59,10 @@ public class login extends HttpServlet implements Serializable {
             response.sendRedirect("index.jsp");
         } else {
             sesion = request.getSession();
- 
 
+            String usu, pass, usu2, pass2;
+	          String variable;
+      
             usu = request.getParameter("user");
             pass = request.getParameter("password");
             
