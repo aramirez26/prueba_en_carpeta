@@ -161,7 +161,7 @@ public class login extends HttpServlet implements Serializable {
             sesion.invalidate();
             response.sendRedirect("/home.jsp");
         }else{
- 
+			mensajes2 mensaje = new mensajes2("Verificar lo ingresado.","error");
         }
     }
 }
