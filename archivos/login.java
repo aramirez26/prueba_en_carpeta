@@ -59,9 +59,10 @@ public class login extends HttpServlet implements Serializable {
             response.sendRedirect("index.jsp");
         } else {
             sesion = request.getSession();
-            String usu, pass, usu2, pass2;
-	String variable;
 
+            String usu, pass, usu2, pass2;
+	          String variable;
+      
             usu = request.getParameter("user");
             pass = request.getParameter("password");
             
@@ -167,7 +168,7 @@ public class login extends HttpServlet implements Serializable {
             sesion.invalidate();
             response.sendRedirect("/home.jsp");
         }else{
- 
+			mensajes2 mensaje = new mensajes2("Verificar lo ingresado.","error");
         }
     }
 }
